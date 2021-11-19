@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D CSS Cube</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/cube.css" />
+    <link rel="stylesheet" href="css/panel.css" />
   </head>
   <body>
+    <!-- Cube -->
     <div class="cube">
       <div class="cube__top"></div>
 
@@ -20,5 +22,32 @@
 
       <div class="cube__shadow"></div>
     </div>
+
+    <!-- Panel -->
+    <div class="panel">
+      <div class="panel__inner">
+        <div class="panel__box">
+          <label class="panel_box_label">Top Color:</label>
+          <input type="color" name="color_1" data-var="--cube-color-1" />
+        </div>
+
+        <div class="panel__box">
+          <label class="panel_box_label">Bottom Color:</label>
+          <input type="color" name="color_2" data-var="--cube-color-2" />
+        </div>
+
+        <div class="panel__box">
+          <label class="panel_box_label">Shadow Color:</label>
+          <input type="color" name="color_3" data-var="--cube-shadow-color">
+        </div>
+
+        <div class="panel__box">
+          <label class="panel_box_label">Background Color:</label>
+          <input type="color" name="bg_color" data-var="--bg-color" />
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

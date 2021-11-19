@@ -9,17 +9,20 @@
   --cube-width-tablet: 200px;
   --cube-width-phone: 150px;
   --cube-width: var(--cube-width-desktop);
-  --cube-color-1: #62201c;
-  --cube-color-2: #ea3939;
-  --cube-color-3: #ff0000;
+  --cube-color-1: #7d7d7d;
+  --cube-color-2: #e6e6e6;
+  --cube-shadow-color: #ffffff;
+  --bg-color: #000000;
 }
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #050505;
+  padding-bottom: 100px;
+  background: var(--bg-color);
 }
 
 .cube {
@@ -76,7 +79,7 @@ body {
 }
 
 .cube__shadow {
-  background-color: var(--cube-color-3);
+  background-color: var(--cube-shadow-color);
   transform: rotateX(90deg) translateZ(calc(var(--cube-width) / 100 * 70 * -1));
   filter: blur(25px);
 }

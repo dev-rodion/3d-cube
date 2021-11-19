@@ -1,0 +1,47 @@
+.panel {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 20px 40px;
+}
+
+.panel__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-gap: 2em 4em;
+  width: fit-content;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  font-family: monospace;
+  font-size: 16px;
+  font-size: 120%;
+  color: #fff;
+}
+
+.panel__box {
+  display: flex;
+  align-items: center;
+  /* background-color: #fff; */
+  border-radius: 1em;
+}
+
+.panel__box label {
+  margin-right: 0.5em;
+  font-size: 1.25em;
+  text-shadow: 1px 0 0 #000, -1px 0 0 #000,0 1px 0 #000,0 -1px 0 #000;
+}
+
+.panel__box input[type="color"] {
+  display: block;
+  padding: 0;
+  border: 2px solid #fff;
+  width: 7.5em;
+  height: 1.75em;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
