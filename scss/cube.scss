@@ -18,10 +18,8 @@
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-bottom: 100px;
   background: var(--bg-color);
 }
 
@@ -32,6 +30,13 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
   animation: rotate 10s linear infinite;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
   &__sides {
     position: absolute;
     top: 0;

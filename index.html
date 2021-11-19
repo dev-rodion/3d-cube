@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="css/panel.css" />
   </head>
   <body>
-    <!-- Cube -->
-    <div class="cube">
-      <div class="cube__top"></div>
+    <div class="cube__wrapper">
+      <!-- Cube -->
+      <div class="cube">
+        <div class="cube__top"></div>
 
-      <div class="cube__sides">
-        <span class="cube__side" style="--i: 0"></span>
-        <span class="cube__side" style="--i: 1"></span>
-        <span class="cube__side" style="--i: 2"></span>
-        <span class="cube__side" style="--i: 3"></span>
+        <div class="cube__sides">
+          <span class="cube__side" style="--i: 0"></span>
+          <span class="cube__side" style="--i: 1"></span>
+          <span class="cube__side" style="--i: 2"></span>
+          <span class="cube__side" style="--i: 3"></span>
+        </div>
+
+        <div class="cube__shadow"></div>
       </div>
-
-      <div class="cube__shadow"></div>
     </div>
 
     <!-- Panel -->
@@ -38,7 +40,7 @@
 
         <div class="panel__box">
           <label class="panel_box_label">Shadow Color:</label>
-          <input type="color" name="color_3" data-var="--cube-shadow-color">
+          <input type="color" name="color_3" data-var="--cube-shadow-color" />
         </div>
 
         <div class="panel__box">
